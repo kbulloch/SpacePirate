@@ -28,8 +28,11 @@ spacePirates.factory('StatusFactory', function StatusFactory() {
   }
 
   factory.cabin_repress = function() {
-    factory.power = "nominal";
     factory.atmo_pressure = "nominal";
+  }
+
+  factory.restore_power = function() {
+    factory.power = "nominal";
   }
 
   factory.vent_oxygen = function() {

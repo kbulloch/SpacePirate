@@ -39,6 +39,12 @@ spacePirates.controller('StatusCtrl', function StatusCtrl($scope, StatusFactory)
     StatusFactory.cabin_repress();
   }
 
+  $scope.restore_power = function() {
+    if (($scope.atmo_pressure === "nominal") && ($scope.lifeform === 1)) {
+      StatusFactory.restore_power();
+    }
+  }
+
   $scope.reboot_eng_comp = function() {
     if ($scope.power === "nominal") {
       StatusFactory.reboot_eng_comp();
