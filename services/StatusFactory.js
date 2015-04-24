@@ -24,11 +24,11 @@ spacePirates.factory('StatusFactory', function StatusFactory() {
 
   factory.vent_engine_room = function() {
     factory.lifeform = 1;
-    factory.power = "nominal";
     factory.atmo_pressure = "critical";
   }
 
   factory.cabin_repress = function() {
+    factory.power = "nominal";
     factory.atmo_pressure = "nominal";
   }
 
