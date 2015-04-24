@@ -31,8 +31,12 @@ spacePirates.controller('StatusCtrl', function StatusCtrl($scope, StatusFactory)
 
   $scope.vent_engine_room = function() {
     if ($scope.bulkheads === "sealed") {
-      StatusFactory.kill_intruder();
+      StatusFactory.vent_engine_room();
     }
+  }
+
+  $scope.cabin_repress = function() {
+    StatusFactory.cabin_repress();
   }
 
   $scope.reboot_eng_comp = function() {

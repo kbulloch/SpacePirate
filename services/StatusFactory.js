@@ -22,9 +22,14 @@ spacePirates.factory('StatusFactory', function StatusFactory() {
     factory.bulkheads = "open";
   }
 
-  factory.kill_intruder = function() {
+  factory.vent_engine_room = function() {
     factory.lifeform = 1;
     factory.power = "nominal";
+    factory.atmo_pressure = "critical";
+  }
+
+  factory.cabin_repress = function() {
+    factory.atmo_pressure = "nominal";
   }
 
   factory.vent_oxygen = function() {
