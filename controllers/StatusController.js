@@ -6,6 +6,7 @@ spacePirates.controller('StatusCtrl', function StatusCtrl($scope, StatusFactory)
   $scope.bulkheads = StatusFactory.bulkheads;
   $scope.power = StatusFactory.power;
   $scope.eng_comp_status = StatusFactory.eng_comp_status;
+  $scope.atmo_pressure = StatusFactory.atmo_pressure;
 
   //change the properies methods here
 

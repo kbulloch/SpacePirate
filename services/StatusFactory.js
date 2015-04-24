@@ -1,12 +1,13 @@
 spacePirates.factory('StatusFactory', function StatusFactory() {
   var factory = {};
 
-  factory.life_support = "undefined";
+  factory.life_support = "limited";
   factory.sail = "undeployed";
   factory.lifeform = "undefined";
   factory.bulkheads = "open";
   factory.power = "reserve";
   factory.eng_comp_status = "offline";
+  factory.atmo_pressure = "nominal";
 
 
   factory.update_lifeform_count = function() {
