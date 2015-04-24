@@ -7,4 +7,4 @@ add requirement to repressurize cabin after venting engine room
 
 add cabin pressure status bar item
 
-define life-support at some point
+only allow vent_engine_room once

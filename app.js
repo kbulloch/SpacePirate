@@ -334,6 +334,20 @@ $stateProvider.state('crew_status_1', {
   }
 });
 
+$stateProvider.state('crew_status_undefined', {
+  url: 'crew_status',
+  views: {
+    'terminal': {
+      templateUrl: 'partials/security/crew_status.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
+});
+
 $stateProvider.state('seal_bulkheads', {
   url: 'seal_bulkheads',
   views: {
