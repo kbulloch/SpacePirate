@@ -78,20 +78,6 @@ $stateProvider.state('raise_sails_offline', {
     }
 });
 
-  $stateProvider.state('raise_sails_false', {
-    url: 'raise_sails_false',
-    views: {
-      'terminal': {
-        templateUrl: 'partials/engine/raise_sails_false.html',
-        controller: 'StatusCtrl'
-      },
-      'status': {
-        templateUrl: 'status.html',
-        controller: 'StatusCtrl'
-      }
-    }
-});
-
   $stateProvider.state('reboot_prop_reserve', {
     url: 'reboot_prop_false',
     views: {
@@ -395,6 +381,76 @@ $stateProvider.state('open', {
   views: {
     'terminal': {
       templateUrl: 'partials/ventdeath.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
+});
+
+$stateProvider.state('restore_power_nominal_undefined', {
+  url: 'restore_power',
+  views: {
+    'terminal': {
+      templateUrl: 'partials/engine/restore_power_intruder.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
+});
+
+$stateProvider.state('restore_power_nominal_2', {
+  url: 'restore_power',
+  views: {
+    'terminal': {
+      templateUrl: 'partials/engine/restore_power_intruder.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
+});
+
+$stateProvider.state('restore_power_critical_2', {
+  url: 'restore_power',
+  views: {
+    'terminal': {
+      templateUrl: 'partials/engine/restore_power_intruder.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
+});
+
+$stateProvider.state('restore_power_critical_1', {
+  url: 'restore_power',
+  views: {
+    'terminal': {
+      templateUrl: 'partials/engine/restore_power_pressure.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
+});
+
+$stateProvider.state('restore_power_nominal_1', {
+  url: 'restore_power',
+  views: {
+    'terminal': {
+      templateUrl: 'partials/engine/restore_power.html',
       controller: 'StatusCtrl'
     },
     'status': {
